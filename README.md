@@ -19,11 +19,11 @@ ZMQ cpp/java demo
 
  > sudo make install
 
- > sudo mv /usr/local/lib/*zmq* /lib
+ > sudo mv /usr/local/lib/\*zmq\* /lib
 
  * Installed files:
 
- > file /lib/*zmq*
+ > file /lib/\*zmq\*
 
 # 2 - JZMQ Library
 
@@ -45,14 +45,14 @@ ZMQ cpp/java demo
 
  > sudo make install
 
- > sudo mv /usr/local/lib/*jzmq* /lib
+ > sudo mv /usr/local/lib/\*jzmq\* /lib
 
 
  * Installed files:
 
- > file /lib/*jzmq*
+ > file /lib/\*jzmq\*
 
- > file /usr/local/share/java/*zmq*
+ > file /usr/local/share/java/\*zmq\*
 
 ---
 
