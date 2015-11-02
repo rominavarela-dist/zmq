@@ -14,7 +14,7 @@ public class App
         while (true)
 	{
 		System.out.println("msg "+i);           
-		sender.send(("msg" + i).getBytes(),0);
+		sender.send(("msg " + i).getBytes(),ZMQ.DONTWAIT);
 		i++;
 		Thread.sleep(3000);
         }
