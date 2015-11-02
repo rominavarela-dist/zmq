@@ -20,7 +20,7 @@ int main ()
 	{
 		str = "msg "+ std::to_string(i);
 		std::cout << str << endl;
-		zmq_send (sender, str.c_str(), str.length(), 0);
+		zmq_send (sender, str.c_str(), str.length(), ZMQ_DONTWAIT);
 		i++;
 		fflush (stdout);
 		sleep(3);

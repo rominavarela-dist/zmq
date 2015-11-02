@@ -28,22 +28,6 @@ int main ()
 	
 	zmq_close (sender);
 	zmq_ctx_destroy (context);
-	/*void *context = zmq_ctx_new ();
-	void *sender = zmq_socket (context, ZMQ_PUSH);
-	int rc = zmq_bind (sender, "tcp://*:5557");
-	assert (rc == 0);
-	
-	std::cout << "push service up" << endl;
-	int i=0;
-	const char *str = "";
-	while(1)
-	{
-		str = "msg "+i;
-		zmq_send (sender, str, strlen(str), 0);
-		std::cout << str << endl;
-		i++;
-		sleep(3);			
-	}*/
 	
  	return 0;
 }
