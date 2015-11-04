@@ -19,15 +19,15 @@ ZMQ cpp/java demo
 
  > sudo make install
 
- > sudo mv /usr/local/lib/\*zmq\* /lib
+ > nano ~/.bashrc
 
- * Installed files:
+    Write in the end of file:
 
- > file /lib/\*zmq\*
+    export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
 # 2 - JZMQ Library
 
- > git clone git clone https://github.com/zeromq/jzmq.git
+ > git clone https://github.com/zeromq/jzmq.git
 
  > cd jzmq
 
@@ -35,7 +35,7 @@ ZMQ cpp/java demo
 
     if libtool not found bug
 
-    https://github.com/zeromq/libzmq/issues/1385
+    https://github.com/zeromq/licdbzmq/issues/1385
 
       > sudo ln -s /usr/bin/libtoolize /usr/bin/libtool
 
@@ -45,14 +45,6 @@ ZMQ cpp/java demo
 
  > sudo make install
 
- > sudo mv /usr/local/lib/\*jzmq\* /lib
-
-
- * Installed files:
-
- > file /lib/\*jzmq\*
-
- > file /usr/local/share/java/\*zmq\*
 
 ---
 
